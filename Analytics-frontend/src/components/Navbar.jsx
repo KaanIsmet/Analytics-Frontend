@@ -33,10 +33,10 @@ export default function Navbar() {
                     
                     {/* Right side: Sign Up Button */}
                     <Link 
-                        href="/signup"
+                        href="/login"
                         className="signup-button rounded-sm py-2 px-4 hover:bg-cyan-500 hover:text-white"
                     >
-                        Sign up
+                        Sign in
                     </Link>
                 </div> 
             </div>
