@@ -10,22 +10,22 @@ export default function Navbar() {
                     <div className="flex items-center space-x-8">
                         
                         <div className="flex items-center space-x-8">  {/* Increased spacing */}
-                            <Link href="/" className="text-lg text-white hover:text-gray-700" scroll={true}>  {/* Changed to black */}
+                            <Link to="/" className="text-lg text-white hover:text-gray-700" scroll={true}>  {/* Changed to black */}
                                 Stock Nest
                             </Link>
-                            <Link href="/my-profile" className="text-lg text-white hover:text-gray-700">
+                            <Link to="/my-profile" className="text-lg text-white hover:text-gray-700">
                                 My Profile
                             </Link>
-                            <Link href="/trending" className="text-lg text-white hover:text-gray-700">
+                            <Link to="/trending" className="text-lg text-white hover:text-gray-700">
                                 Trending
                             </Link>
-                            <Link href="/market" className="text-lg text-white hover:text-gray-700">
+                            <Link to="/market" className="text-lg text-white hover:text-gray-700">
                                 Market
                             </Link>
-                            <Link href="/news" className="text-lg text-white hover:text-gray-700">
+                            <Link to="/news" className="text-lg text-white hover:text-gray-700">
                                 News
                             </Link>
-                            <Link href="/notifications" className="text-lg text-white hover:text-gray-700">
+                            <Link to="/notifications" className="text-lg text-white hover:text-gray-700">
                                 Notifications
                             </Link>
                         </div>
@@ -33,7 +33,7 @@ export default function Navbar() {
                     
                     {/* Right side: Sign Up Button */}
                     <Link 
-                        href="/login"
+                        to="/login"
                         className="signup-button rounded-sm py-2 px-4 hover:bg-cyan-500 hover:text-white"
                     >
                         Sign in

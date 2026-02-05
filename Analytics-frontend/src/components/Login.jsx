@@ -20,15 +20,17 @@ export default function Login() {
   const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    await axios.post('http://localhost:8000/api/login', { email, password })
-    .then(response => {
-      setIsLoggedIn(true);
-      setIsLoading(false);
-    })
-    .catch(error => {
-      setError(error.response.data.message);
-      setIsLoading(false);
-    })
+    // await axios.post('http://localhost:8000/api/login', { email, password })
+    // .then(response => {
+    //   setIsLoggedIn(true);
+    //   setIsLoading(false);
+    // })
+    // .catch(error => {
+    //   setError(error.response.data.message);
+    //   setIsLoading(false);
+    // })
+    console.log("user is attempting to login")
+    navigate('/');
   }
 
   const NavigateToRegistration = () => {
@@ -55,7 +57,7 @@ export default function Login() {
           </div>
           
           {/* Form */}
-          <div className="space-y-4">
+          <form className="space-y-4" onSubmit={onSubmit}>
             {/* Email Input */}
             <input
               type="email"
@@ -78,7 +80,7 @@ export default function Login() {
             </div>
 
             {/* Login Button */}
-            <button className="w-full py-3 rounded-full bg-cyan-400 text-gray-800 font-medium hover:bg-cyan-500 transition-colors">
+            <button className="w-full py-3 rounded-full bg-cyan-400 text-gray-800 font-medium hover:bg-cyan-500 transition-colors" onSu>
               Login
             </button>
 
@@ -91,7 +93,7 @@ export default function Login() {
             <button className="w-full py-3 rounded-full bg-cyan-500 text-white font-medium hover:bg-cyan-600 transition-colors" onClick={NavigateToRegistration}>
               Registration
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
