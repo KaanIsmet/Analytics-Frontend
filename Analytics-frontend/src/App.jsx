@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage'
 import RegistrationPage from './pages/RegistrationPage'
 import Navbar from './components/Navbar'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/registration' element={<RegistrationPage/>}/>
       </Routes>
+      <Footer />
     </div>
   )
 }
