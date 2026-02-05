@@ -10,22 +10,22 @@ export default function Navbar() {
                     <div className="flex items-center space-x-8">
                         
                         <div className="flex items-center space-x-8">  {/* Increased spacing */}
-                            <Link href="/" className="text-lg text-black hover:text-gray-700" scroll={true}>  {/* Changed to black */}
+                            <Link href="/" className="text-lg text-white hover:text-gray-700" scroll={true}>  {/* Changed to black */}
                                 Stock Nest
                             </Link>
-                            <Link href="/my-profile" className="text-lg text-black hover:text-gray-700">
+                            <Link href="/my-profile" className="text-lg text-white hover:text-gray-700">
                                 My Profile
                             </Link>
-                            <Link href="/trending" className="text-lg text-black hover:text-gray-700">
+                            <Link href="/trending" className="text-lg text-white hover:text-gray-700">
                                 Trending
                             </Link>
-                            <Link href="/market" className="text-lg text-black hover:text-gray-700">
+                            <Link href="/market" className="text-lg text-white hover:text-gray-700">
                                 Market
                             </Link>
-                            <Link href="/news" className="text-lg text-black hover:text-gray-700">
+                            <Link href="/news" className="text-lg text-white hover:text-gray-700">
                                 News
                             </Link>
-                            <Link href="/notifications" className="text-lg text-black hover:text-gray-700">
+                            <Link href="/notifications" className="text-lg text-white hover:text-gray-700">
                                 Notifications
                             </Link>
                         </div>
